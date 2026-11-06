@@ -1,0 +1,9 @@
+# /etc/greetd/config.toml (system file: copy with sudo)
+# Login v1: tuigreet on tty1, launching Hyprland through its watchdog.
+# A Quickshell greeter matching the deck comes later; tuigreet stays as the fallback.
+[terminal]
+vt = 1
+
+[default_session]
+command = "tuigreet --time --time-format '%H:%M' --remember --asterisks --cmd start-hyprland"
+user = "greeter"
